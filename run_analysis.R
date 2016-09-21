@@ -15,7 +15,7 @@ download.file(fileURL, destfile="/Users/olivieraubert/Desktop/R/EXERCIE_COURSERA
 unzip ("/Users/olivieraubert/Desktop/R/EXERCIE_COURSERA/UCI_HAR_DATASET.zip")
 
 # TRAIN
-setwd("/Users/olivieraubert/Desktop/R/EXERCIE_COURSERA/UCI HAR Dataset/train")
+setwd("./UCI HAR Dataset/train")
 X_train <-  read.table ("X_train.txt")
 dim (X_train) 
 View(X_train)
@@ -25,7 +25,7 @@ subject_train <-  read.table ("subject_train.txt")
 dim (subject_train) 
 
 # TEST
-setwd("/Users/olivieraubert/Desktop/R/EXERCIE_COURSERA/UCI HAR Dataset/test")
+setwd("./UCI HAR Dataset/test")
 X_test <-  read.table ("X_test.txt")
 dim (X_test) 
 View(X_test)
@@ -36,7 +36,7 @@ dim (subject_test)
 names (subject_test)
 
 ## Rename the database : train sets
-setwd("/Users/olivieraubert/Desktop/R/EXERCIE_COURSERA/UCI HAR Dataset")
+setwd("./UCI HAR Dataset")
 features <- read.table ("features.txt")
 colnames (X_train) <- features[,2]
 colnames (y_train) <- "activityId"
@@ -47,7 +47,7 @@ TRAINSETS <- cbind (y_train, subject_train, X_train)
 View (TRAINSETS)
 
 ## Rename the database : test sets
-setwd("/Users/olivieraubert/Desktop/R/EXERCIE_COURSERA/UCI HAR Dataset")
+setwd("./UCI HAR Dataset")
 features <- read.table ("features.txt")
 colnames (X_test) <- features[,2]
 colnames (y_test) <- "activityId"
@@ -76,7 +76,7 @@ View(FINAL_DATABASE_MEAN_SD)
 #########################################################################################################
 
 ## Download the descriptive activity names
-setwd("/Users/olivieraubert/Desktop/R/EXERCIE_COURSERA/UCI HAR Dataset")
+setwd("./UCI HAR Dataset")
 activity_labels <- read.table ("activity_labels.txt")
 View (activity_labels)
 
