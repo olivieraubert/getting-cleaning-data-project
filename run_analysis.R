@@ -11,8 +11,8 @@
 # Download the dataset then unzip the dataset:
 FILE <- "getdata_dataset.zip"
 fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(fileURL, destfile="/Users/olivieraubert/Desktop/R/EXERCIE_COURSERA/UCI_HAR_DATASET.zip", method="curl")
-unzip ("/Users/olivieraubert/Desktop/R/EXERCIE_COURSERA/UCI_HAR_DATASET.zip")
+download.file(fileURL, destfile="./UCI_HAR_DATASET.zip", method="curl")
+unzip ("./UCI_HAR_DATASET.zip")
 
 # TRAIN
 setwd("./UCI HAR Dataset/train")
