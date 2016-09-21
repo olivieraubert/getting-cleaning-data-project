@@ -1,4 +1,4 @@
-# getting-cleaning-data-project
+# Getting-cleaning-data-project
 
 # Source of the dataset 
 - http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
