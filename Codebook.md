@@ -38,7 +38,6 @@ Merge data subset with the activityType
 ## 4 Appropriately labels the data set with descriptive variable names.
 Use the function gsub to change the names
 
-## 5 From the data set in step 4, creates a second, independent tidy data set with the average of each 
-##  variable for each activity and each subject.
+## 5 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 Use the function aggregate
 Use the function write.table
