@@ -30,7 +30,7 @@ The sets are:
 - 'test/y_test.txt': Test labels.
 
 ## 2 Extracts only the measurements on the mean and standard deviation for each measurement.
-Use the function grepl to extract the mean abd standard deviation
+Use the function grepl to extract the mean and standard deviation
 
 ## 3 Uses descriptive activity names to name the activities in the data set
 Merge data subset with the activityType 
